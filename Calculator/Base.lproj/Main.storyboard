@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina5_5" orientation="landscape">
+    <device id="ipad9_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -20,15 +20,15 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZzK-cl-SMa">
-                                <rect key="frame" x="442" y="120" width="294" height="294"/>
+                                <rect key="frame" x="461" y="717" width="307" height="307"/>
                                 <color key="backgroundColor" red="0.94909471270000001" green="0.40722846309999999" blue="0.38532110429999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9kP-t5-N6F">
-                                <rect key="frame" x="0.0" y="0.0" width="736" height="120"/>
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="717"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
@@ -68,11 +68,19 @@
                                 <exclude reference="m3m-7D-qJc"/>
                             </mask>
                         </variation>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <mask key="constraints">
+                                <exclude reference="2Fo-Ob-8SZ"/>
+                                <include reference="4b6-mF-kxG"/>
+                                <include reference="MSg-Lj-IiY"/>
+                                <exclude reference="m3m-7D-qJc"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="210.21126760563379" y="123.75"/>
+            <point key="canvasLocation" x="209.765625" y="123.4375"/>
         </scene>
     </scenes>
 </document>
