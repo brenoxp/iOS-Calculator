@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="ipad9_7" orientation="portrait">
+    <device id="ipad12_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -20,16 +20,20 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZzK-cl-SMa">
-                                <rect key="frame" x="461" y="717" width="307" height="307"/>
+                                <rect key="frame" x="614.5" y="956.5" width="409.5" height="409.5"/>
                                 <color key="backgroundColor" red="0.94909471270000001" green="0.40722846309999999" blue="0.38532110429999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9kP-t5-N6F">
-                                <rect key="frame" x="0.0" y="0.0" width="768" height="717"/>
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="956.5"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0di-Cx-eDY">
+                                <rect key="frame" x="0.0" y="956.5" width="614.5" height="409.5"/>
+                                <color key="backgroundColor" red="0.75657969709999995" green="0.61900895830000002" blue="0.29239186639999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -37,10 +41,14 @@
                             <constraint firstItem="ZzK-cl-SMa" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="2Fo-Ob-8SZ"/>
                             <constraint firstItem="ZzK-cl-SMa" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.4" id="4b6-mF-kxG"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ZzK-cl-SMa" secondAttribute="bottom" id="9ji-TH-Cc5"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="0di-Cx-eDY" secondAttribute="bottom" id="D5I-p0-ZJT"/>
                             <constraint firstItem="9kP-t5-N6F" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="EQo-oC-tHT"/>
                             <constraint firstItem="ZzK-cl-SMa" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.4" id="MSg-Lj-IiY"/>
                             <constraint firstAttribute="trailing" secondItem="ZzK-cl-SMa" secondAttribute="trailing" id="YYE-3X-Y2x"/>
+                            <constraint firstItem="0di-Cx-eDY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="cLk-6J-NKG"/>
+                            <constraint firstItem="0di-Cx-eDY" firstAttribute="top" secondItem="9kP-t5-N6F" secondAttribute="bottom" id="kXr-wv-d9P"/>
                             <constraint firstItem="ZzK-cl-SMa" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="1.25" id="m3m-7D-qJc"/>
+                            <constraint firstItem="ZzK-cl-SMa" firstAttribute="leading" secondItem="0di-Cx-eDY" secondAttribute="trailing" id="o11-cS-Rbb"/>
                             <constraint firstAttribute="trailing" secondItem="9kP-t5-N6F" secondAttribute="trailing" id="wbh-Ev-aLz"/>
                             <constraint firstItem="ZzK-cl-SMa" firstAttribute="top" secondItem="9kP-t5-N6F" secondAttribute="bottom" id="zE2-ZJ-glP"/>
                             <constraint firstItem="9kP-t5-N6F" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="zJi-T7-EgF"/>
