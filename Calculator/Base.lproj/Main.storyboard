@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="ipad12_9" orientation="portrait">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -20,20 +20,614 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZzK-cl-SMa">
-                                <rect key="frame" x="614.5" y="956.5" width="409.5" height="409.5"/>
-                                <color key="backgroundColor" red="0.94909471270000001" green="0.40722846309999999" blue="0.38532110429999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZzK-cl-SMa" customClass="SimpleOperationsView" customModule="Calculator" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="218.66666666666669" width="414" height="517.33333333333326"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oVW-B5-H6O" customClass="ButtonView" customModule="Calculator" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="103.66666666666667" height="103.00000000000003"/>
+                                        <color key="backgroundColor" red="0.77071249490000004" green="0.77126258609999998" blue="0.7814884782" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="23"/>
+                                        <state key="normal" title="AC">
+                                            <color key="titleColor" red="0.17240959405899048" green="0.17255401611328125" blue="0.17718389630317688" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4ho-QG-aDY" customClass="ButtonView" customModule="Calculator" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="103.00000000000003" width="103.66666666666667" height="103.66666666666663"/>
+                                        <color key="backgroundColor" red="0.81682944297790527" green="0.82446646690368652" blue="0.83100080490112305" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="34"/>
+                                        <state key="normal" title="7">
+                                            <color key="titleColor" red="0.17240959410000001" green="0.17255401610000001" blue="0.1771838963" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xxB-1m-091" customClass="ButtonView" customModule="Calculator" customModuleProvider="target">
+                                        <rect key="frame" x="103.66666666666669" y="103.00000000000003" width="103.33333333333331" height="103.66666666666663"/>
+                                        <color key="backgroundColor" red="0.81682944300000004" green="0.82446646690000003" blue="0.83100080489999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="34"/>
+                                        <state key="normal" title="8">
+                                            <color key="titleColor" red="0.17240959410000001" green="0.17255401610000001" blue="0.1771838963" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zdj-yw-gYo" customClass="ButtonView" customModule="Calculator" customModuleProvider="target">
+                                        <rect key="frame" x="103.66666666666669" y="206.66666666666666" width="103.33333333333331" height="103.66666666666671"/>
+                                        <color key="backgroundColor" red="0.81682944300000004" green="0.82446646690000003" blue="0.83100080489999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="34"/>
+                                        <state key="normal" title="5">
+                                            <color key="titleColor" red="0.17240959410000001" green="0.17255401610000001" blue="0.1771838963" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4u2-sd-Vh2" customClass="ButtonView" customModule="Calculator" customModuleProvider="target">
+                                        <rect key="frame" x="103.66666666666669" y="310.33333333333337" width="103.33333333333331" height="103.33333333333337"/>
+                                        <color key="backgroundColor" red="0.81682944300000004" green="0.82446646690000003" blue="0.83100080489999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="34"/>
+                                        <state key="normal" title="2">
+                                            <color key="titleColor" red="0.17240959410000001" green="0.17255401610000001" blue="0.1771838963" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ajL-Tf-Z21" customClass="ButtonView" customModule="Calculator" customModuleProvider="target">
+                                        <rect key="frame" x="207.00000000000003" y="310.33333333333337" width="103.66666666666671" height="103.33333333333337"/>
+                                        <color key="backgroundColor" red="0.81682944300000004" green="0.82446646690000003" blue="0.83100080489999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="34"/>
+                                        <state key="normal" title="3">
+                                            <color key="titleColor" red="0.17240959410000001" green="0.17255401610000001" blue="0.1771838963" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zi7-1m-Imf" customClass="ButtonView" customModule="Calculator" customModuleProvider="target">
+                                        <rect key="frame" x="207.00000000000003" y="413.66666666666674" width="103.66666666666671" height="103.66666666666663"/>
+                                        <color key="backgroundColor" red="0.81682944300000004" green="0.82446646690000003" blue="0.83100080489999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="34"/>
+                                        <state key="normal" title=",">
+                                            <color key="titleColor" red="0.17240959410000001" green="0.17255401610000001" blue="0.1771838963" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TJr-QX-vNT" customClass="ButtonView" customModule="Calculator" customModuleProvider="target">
+                                        <rect key="frame" x="207.00000000000003" y="206.66666666666666" width="103.66666666666671" height="103.66666666666671"/>
+                                        <color key="backgroundColor" red="0.81682944300000004" green="0.82446646690000003" blue="0.83100080489999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="34"/>
+                                        <state key="normal" title="6">
+                                            <color key="titleColor" red="0.17240959410000001" green="0.17255401610000001" blue="0.1771838963" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="07H-Pu-JoF" customClass="ButtonView" customModule="Calculator" customModuleProvider="target">
+                                        <rect key="frame" x="207.00000000000003" y="103.00000000000003" width="103.66666666666671" height="103.66666666666663"/>
+                                        <color key="backgroundColor" red="0.81682944300000004" green="0.82446646690000003" blue="0.83100080489999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="34"/>
+                                        <state key="normal" title="9">
+                                            <color key="titleColor" red="0.17240959410000001" green="0.17255401610000001" blue="0.1771838963" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jRm-3J-iJD" customClass="ButtonView" customModule="Calculator" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="206.66666666666666" width="103.66666666666667" height="103.66666666666671"/>
+                                        <color key="backgroundColor" red="0.81682944300000004" green="0.82446646690000003" blue="0.83100080489999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="34"/>
+                                        <state key="normal" title="4">
+                                            <color key="titleColor" red="0.17240959410000001" green="0.17255401610000001" blue="0.1771838963" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jZy-Uk-yJm" customClass="ButtonView" customModule="Calculator" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="310.33333333333337" width="103.66666666666667" height="103.33333333333337"/>
+                                        <color key="backgroundColor" red="0.81682944300000004" green="0.82446646690000003" blue="0.83100080489999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="34"/>
+                                        <state key="normal" title="1">
+                                            <color key="titleColor" red="0.17240959410000001" green="0.17255401610000001" blue="0.1771838963" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F4k-ne-YKc" customClass="ButtonView" customModule="Calculator" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="413.66666666666674" width="207" height="103.66666666666663"/>
+                                        <color key="backgroundColor" red="0.81682944300000004" green="0.82446646690000003" blue="0.83100080489999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="34"/>
+                                        <state key="normal" title="0">
+                                            <color key="titleColor" red="0.17240959410000001" green="0.17255401610000001" blue="0.1771838963" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m2n-j4-bAX" customClass="ButtonView" customModule="Calculator" customModuleProvider="target">
+                                        <rect key="frame" x="103.66666666666669" y="0.0" width="103.33333333333331" height="103.00000000000003"/>
+                                        <color key="backgroundColor" red="0.77071249490000004" green="0.77126258609999998" blue="0.7814884782" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="23"/>
+                                        <state key="normal" title="±">
+                                            <color key="titleColor" red="0.17240959410000001" green="0.17255401610000001" blue="0.1771838963" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hnZ-ol-S5L" customClass="ButtonView" customModule="Calculator" customModuleProvider="target">
+                                        <rect key="frame" x="207.00000000000003" y="0.0" width="103.66666666666671" height="103.00000000000003"/>
+                                        <color key="backgroundColor" red="0.77071249490000004" green="0.77126258609999998" blue="0.7814884782" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="23"/>
+                                        <state key="normal" title="%">
+                                            <color key="titleColor" red="0.17240959410000001" green="0.17255401610000001" blue="0.1771838963" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vkc-fU-oh9" customClass="ButtonView" customModule="Calculator" customModuleProvider="target">
+                                        <rect key="frame" x="310.66666666666674" y="0.0" width="103.33333333333331" height="103.66666666666666"/>
+                                        <color key="backgroundColor" red="0.9756208062171936" green="0.55118721723556519" blue="0.068132854998111725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="23"/>
+                                        <state key="normal" title="÷">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aq7-pD-Whg" customClass="ButtonView" customModule="Calculator" customModuleProvider="target">
+                                        <rect key="frame" x="310.66666666666674" y="103.00000000000003" width="103.33333333333331" height="104.33333333333331"/>
+                                        <color key="backgroundColor" red="0.97562080620000002" green="0.55118721719999997" blue="0.068132855000000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="23"/>
+                                        <state key="normal" title="×">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ezY-7G-na1" customClass="ButtonView" customModule="Calculator" customModuleProvider="target">
+                                        <rect key="frame" x="310.66666666666674" y="206.66666666666666" width="103.33333333333331" height="103.66666666666671"/>
+                                        <color key="backgroundColor" red="0.97562080620000002" green="0.55118721719999997" blue="0.068132855000000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="23"/>
+                                        <state key="normal" title="—">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gxv-Hq-k4w" customClass="ButtonView" customModule="Calculator" customModuleProvider="target">
+                                        <rect key="frame" x="310.66666666666674" y="310.33333333333337" width="103.33333333333331" height="103.33333333333337"/>
+                                        <color key="backgroundColor" red="0.97562080620000002" green="0.55118721719999997" blue="0.068132855000000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="23"/>
+                                        <state key="normal" title="+">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wny-Kl-Ruy" customClass="ButtonView" customModule="Calculator" customModuleProvider="target">
+                                        <rect key="frame" x="310.66666666666674" y="413.66666666666674" width="103.33333333333331" height="103.66666666666663"/>
+                                        <color key="backgroundColor" red="0.97562080620000002" green="0.55118721719999997" blue="0.068132855000000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="23"/>
+                                        <state key="normal" title="=">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Zdj-yw-gYo" firstAttribute="height" secondItem="jRm-3J-iJD" secondAttribute="height" id="0bn-JX-MBr"/>
+                                    <constraint firstItem="vkc-fU-oh9" firstAttribute="height" secondItem="hnZ-ol-S5L" secondAttribute="height" id="1OX-C4-6Mh"/>
+                                    <constraint firstItem="jRm-3J-iJD" firstAttribute="width" secondItem="4ho-QG-aDY" secondAttribute="width" id="2o7-l6-eIm"/>
+                                    <constraint firstItem="hnZ-ol-S5L" firstAttribute="top" secondItem="ZzK-cl-SMa" secondAttribute="top" id="4o8-e2-pzp"/>
+                                    <constraint firstItem="Aq7-pD-Whg" firstAttribute="leading" secondItem="07H-Pu-JoF" secondAttribute="trailing" id="5HU-Id-KTs"/>
+                                    <constraint firstItem="ezY-7G-na1" firstAttribute="height" secondItem="TJr-QX-vNT" secondAttribute="height" id="6Ie-vW-8cT"/>
+                                    <constraint firstAttribute="trailing" secondItem="Wny-Kl-Ruy" secondAttribute="trailing" id="6bo-WY-s3v"/>
+                                    <constraint firstItem="hnZ-ol-S5L" firstAttribute="height" secondItem="m2n-j4-bAX" secondAttribute="height" id="82D-bI-Oe8"/>
+                                    <constraint firstItem="hnZ-ol-S5L" firstAttribute="width" secondItem="vkc-fU-oh9" secondAttribute="width" id="8gi-1H-38R"/>
+                                    <constraint firstItem="Wny-Kl-Ruy" firstAttribute="leading" secondItem="zi7-1m-Imf" secondAttribute="trailing" id="99k-ti-Yn8"/>
+                                    <constraint firstItem="jZy-Uk-yJm" firstAttribute="height" secondItem="jRm-3J-iJD" secondAttribute="height" id="A5h-1J-aJR"/>
+                                    <constraint firstItem="xxB-1m-091" firstAttribute="width" secondItem="4ho-QG-aDY" secondAttribute="width" id="A6w-kq-m2z"/>
+                                    <constraint firstItem="jRm-3J-iJD" firstAttribute="height" secondItem="4ho-QG-aDY" secondAttribute="height" id="CMd-Gz-pAS"/>
+                                    <constraint firstItem="F4k-ne-YKc" firstAttribute="leading" secondItem="ZzK-cl-SMa" secondAttribute="leading" id="Cx7-4l-miJ"/>
+                                    <constraint firstItem="07H-Pu-JoF" firstAttribute="width" secondItem="xxB-1m-091" secondAttribute="width" id="DFt-h1-IZp"/>
+                                    <constraint firstItem="4u2-sd-Vh2" firstAttribute="width" secondItem="jZy-Uk-yJm" secondAttribute="width" id="EQJ-2t-RcK"/>
+                                    <constraint firstItem="4ho-QG-aDY" firstAttribute="leading" secondItem="ZzK-cl-SMa" secondAttribute="leading" id="Eel-a5-JK5"/>
+                                    <constraint firstItem="m2n-j4-bAX" firstAttribute="width" secondItem="hnZ-ol-S5L" secondAttribute="width" id="G3R-OT-pwr"/>
+                                    <constraint firstItem="xxB-1m-091" firstAttribute="height" secondItem="4ho-QG-aDY" secondAttribute="height" id="HU6-rK-Wd1"/>
+                                    <constraint firstItem="vkc-fU-oh9" firstAttribute="leading" secondItem="hnZ-ol-S5L" secondAttribute="trailing" id="J2S-Ru-zQb"/>
+                                    <constraint firstItem="Wny-Kl-Ruy" firstAttribute="width" secondItem="gxv-Hq-k4w" secondAttribute="width" id="K0b-O4-shM"/>
+                                    <constraint firstItem="07H-Pu-JoF" firstAttribute="leading" secondItem="xxB-1m-091" secondAttribute="trailing" id="KCb-VG-ggX"/>
+                                    <constraint firstItem="jZy-Uk-yJm" firstAttribute="width" secondItem="jRm-3J-iJD" secondAttribute="width" id="KFp-8U-I5R"/>
+                                    <constraint firstItem="m2n-j4-bAX" firstAttribute="leading" secondItem="oVW-B5-H6O" secondAttribute="trailing" id="LzI-gA-hAd"/>
+                                    <constraint firstItem="jRm-3J-iJD" firstAttribute="leading" secondItem="ZzK-cl-SMa" secondAttribute="leading" id="O7b-Yo-V7u"/>
+                                    <constraint firstItem="4ho-QG-aDY" firstAttribute="width" secondItem="oVW-B5-H6O" secondAttribute="width" id="PDu-FV-vb7"/>
+                                    <constraint firstItem="oVW-B5-H6O" firstAttribute="width" secondItem="m2n-j4-bAX" secondAttribute="width" id="Paz-cO-mmp"/>
+                                    <constraint firstItem="vkc-fU-oh9" firstAttribute="top" secondItem="ZzK-cl-SMa" secondAttribute="top" id="QqD-sK-0Jv"/>
+                                    <constraint firstItem="zi7-1m-Imf" firstAttribute="top" secondItem="ajL-Tf-Z21" secondAttribute="bottom" id="RI2-W5-TLt"/>
+                                    <constraint firstAttribute="trailing" secondItem="vkc-fU-oh9" secondAttribute="trailing" id="RKQ-uz-Qd5"/>
+                                    <constraint firstItem="Wny-Kl-Ruy" firstAttribute="height" secondItem="gxv-Hq-k4w" secondAttribute="height" id="SdU-b4-qKe"/>
+                                    <constraint firstItem="oVW-B5-H6O" firstAttribute="top" secondItem="ZzK-cl-SMa" secondAttribute="top" id="Shs-Um-53V"/>
+                                    <constraint firstItem="ajL-Tf-Z21" firstAttribute="leading" secondItem="4u2-sd-Vh2" secondAttribute="trailing" id="TzX-lg-Yxh"/>
+                                    <constraint firstItem="ezY-7G-na1" firstAttribute="width" secondItem="TJr-QX-vNT" secondAttribute="width" id="Ucs-4X-eGT"/>
+                                    <constraint firstItem="m2n-j4-bAX" firstAttribute="top" secondItem="ZzK-cl-SMa" secondAttribute="top" id="UxM-Hv-hhY"/>
+                                    <constraint firstItem="jZy-Uk-yJm" firstAttribute="leading" secondItem="ZzK-cl-SMa" secondAttribute="leading" id="W5o-nG-Ahl"/>
+                                    <constraint firstItem="F4k-ne-YKc" firstAttribute="height" secondItem="jZy-Uk-yJm" secondAttribute="height" id="WaZ-xG-9c7"/>
+                                    <constraint firstItem="jZy-Uk-yJm" firstAttribute="top" secondItem="jRm-3J-iJD" secondAttribute="bottom" id="YmC-6d-M7z"/>
+                                    <constraint firstItem="oVW-B5-H6O" firstAttribute="leading" secondItem="ZzK-cl-SMa" secondAttribute="leading" id="Z9Y-jk-2z2"/>
+                                    <constraint firstItem="4u2-sd-Vh2" firstAttribute="height" secondItem="jZy-Uk-yJm" secondAttribute="height" id="ZCt-ga-v2x"/>
+                                    <constraint firstItem="gxv-Hq-k4w" firstAttribute="top" secondItem="ezY-7G-na1" secondAttribute="bottom" id="aip-Mt-tvm"/>
+                                    <constraint firstItem="TJr-QX-vNT" firstAttribute="width" secondItem="Zdj-yw-gYo" secondAttribute="width" id="b7U-Oh-JhC"/>
+                                    <constraint firstItem="xxB-1m-091" firstAttribute="leading" secondItem="4ho-QG-aDY" secondAttribute="trailing" id="bjo-pa-SPI"/>
+                                    <constraint firstItem="hnZ-ol-S5L" firstAttribute="leading" secondItem="m2n-j4-bAX" secondAttribute="trailing" id="bnx-ZE-S6F"/>
+                                    <constraint firstItem="Zdj-yw-gYo" firstAttribute="width" secondItem="jRm-3J-iJD" secondAttribute="width" id="cXC-2B-fWY"/>
+                                    <constraint firstItem="gxv-Hq-k4w" firstAttribute="height" secondItem="ajL-Tf-Z21" secondAttribute="height" id="cws-kj-K3r"/>
+                                    <constraint firstItem="4ho-QG-aDY" firstAttribute="height" secondItem="oVW-B5-H6O" secondAttribute="height" id="dP0-d7-QgM"/>
+                                    <constraint firstItem="zi7-1m-Imf" firstAttribute="height" secondItem="ajL-Tf-Z21" secondAttribute="height" id="egn-Mu-gh0"/>
+                                    <constraint firstItem="ezY-7G-na1" firstAttribute="leading" secondItem="TJr-QX-vNT" secondAttribute="trailing" id="fAA-Qx-bV6"/>
+                                    <constraint firstItem="Aq7-pD-Whg" firstAttribute="top" secondItem="vkc-fU-oh9" secondAttribute="bottom" id="fOB-Km-dbL"/>
+                                    <constraint firstItem="07H-Pu-JoF" firstAttribute="height" secondItem="xxB-1m-091" secondAttribute="height" id="gFU-Na-Rbb"/>
+                                    <constraint firstItem="Zdj-yw-gYo" firstAttribute="top" secondItem="xxB-1m-091" secondAttribute="bottom" id="hXQ-gh-3Ip"/>
+                                    <constraint firstItem="TJr-QX-vNT" firstAttribute="top" secondItem="07H-Pu-JoF" secondAttribute="bottom" id="ibz-oX-N1C"/>
+                                    <constraint firstItem="xxB-1m-091" firstAttribute="top" secondItem="m2n-j4-bAX" secondAttribute="bottom" id="iee-Br-tU7"/>
+                                    <constraint firstItem="gxv-Hq-k4w" firstAttribute="width" secondItem="ajL-Tf-Z21" secondAttribute="width" id="jFH-vZ-1nB"/>
+                                    <constraint firstItem="TJr-QX-vNT" firstAttribute="height" secondItem="Zdj-yw-gYo" secondAttribute="height" id="lAm-cA-IDO"/>
+                                    <constraint firstItem="Zdj-yw-gYo" firstAttribute="leading" secondItem="jRm-3J-iJD" secondAttribute="trailing" id="lD5-Hh-Y3J"/>
+                                    <constraint firstItem="Wny-Kl-Ruy" firstAttribute="top" secondItem="gxv-Hq-k4w" secondAttribute="bottom" id="mVa-y8-sfM"/>
+                                    <constraint firstItem="Aq7-pD-Whg" firstAttribute="height" secondItem="07H-Pu-JoF" secondAttribute="height" id="ndP-76-Vs8"/>
+                                    <constraint firstItem="zi7-1m-Imf" firstAttribute="leading" secondItem="F4k-ne-YKc" secondAttribute="trailing" id="obE-3u-slZ"/>
+                                    <constraint firstAttribute="bottom" secondItem="F4k-ne-YKc" secondAttribute="bottom" id="pA6-vE-fxf"/>
+                                    <constraint firstItem="m2n-j4-bAX" firstAttribute="height" secondItem="oVW-B5-H6O" secondAttribute="height" id="qBL-Ng-uD3"/>
+                                    <constraint firstItem="4u2-sd-Vh2" firstAttribute="top" secondItem="Zdj-yw-gYo" secondAttribute="bottom" id="qFF-vL-ucW"/>
+                                    <constraint firstItem="Aq7-pD-Whg" firstAttribute="width" secondItem="07H-Pu-JoF" secondAttribute="width" id="qLs-tS-L90"/>
+                                    <constraint firstItem="ezY-7G-na1" firstAttribute="top" secondItem="Aq7-pD-Whg" secondAttribute="bottom" id="qVJ-os-QWL"/>
+                                    <constraint firstItem="zi7-1m-Imf" firstAttribute="width" secondItem="ajL-Tf-Z21" secondAttribute="width" id="rwh-br-Lin"/>
+                                    <constraint firstItem="ajL-Tf-Z21" firstAttribute="width" secondItem="4u2-sd-Vh2" secondAttribute="width" id="tkH-Se-c32"/>
+                                    <constraint firstItem="ajL-Tf-Z21" firstAttribute="top" secondItem="TJr-QX-vNT" secondAttribute="bottom" id="wcB-iJ-BqX"/>
+                                    <constraint firstItem="4u2-sd-Vh2" firstAttribute="leading" secondItem="jZy-Uk-yJm" secondAttribute="trailing" id="xB8-TY-mtX"/>
+                                    <constraint firstItem="TJr-QX-vNT" firstAttribute="leading" secondItem="Zdj-yw-gYo" secondAttribute="trailing" id="xPU-Mn-OK3"/>
+                                    <constraint firstItem="F4k-ne-YKc" firstAttribute="top" secondItem="jZy-Uk-yJm" secondAttribute="bottom" id="xaR-fW-nm1"/>
+                                    <constraint firstItem="gxv-Hq-k4w" firstAttribute="leading" secondItem="ajL-Tf-Z21" secondAttribute="trailing" id="yEM-q5-doC"/>
+                                    <constraint firstItem="07H-Pu-JoF" firstAttribute="top" secondItem="hnZ-ol-S5L" secondAttribute="bottom" id="ymd-63-w8O"/>
+                                    <constraint firstItem="4ho-QG-aDY" firstAttribute="top" secondItem="oVW-B5-H6O" secondAttribute="bottom" id="zaJ-55-2Go"/>
+                                    <constraint firstItem="ajL-Tf-Z21" firstAttribute="height" secondItem="4u2-sd-Vh2" secondAttribute="height" id="zax-Fp-PCW"/>
+                                    <constraint firstItem="jRm-3J-iJD" firstAttribute="top" secondItem="4ho-QG-aDY" secondAttribute="bottom" id="zlk-dw-uSs"/>
+                                </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9kP-t5-N6F">
-                                <rect key="frame" x="0.0" y="0.0" width="1024" height="956.5"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="218.66666666666666"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0di-Cx-eDY">
-                                <rect key="frame" x="0.0" y="956.5" width="614.5" height="409.5"/>
-                                <color key="backgroundColor" red="0.75657969709999995" green="0.61900895830000002" blue="0.29239186639999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="0.0" y="218.66666666666669" width="0.0" height="517.33333333333326"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wR1-Yz-gHC" customClass="ButtonView" customModule="Calculator" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="66" height="103.33333333333334"/>
+                                        <color key="backgroundColor" red="0.77071249490000004" green="0.77126258609999998" blue="0.7814884782" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="23"/>
+                                        <state key="normal" title="(">
+                                            <color key="titleColor" red="0.17240959410000001" green="0.17255401610000001" blue="0.1771838963" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6j5-jS-HIs" customClass="ButtonView" customModule="Calculator" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="103.33333333333334" width="66" height="103.66666666666669"/>
+                                        <color key="backgroundColor" red="0.77071249490000004" green="0.77126258609999998" blue="0.7814884782" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="23"/>
+                                        <state key="normal" title="2">
+                                            <color key="titleColor" red="0.17240959410000001" green="0.17255401610000001" blue="0.1771838963" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oHT-7G-ft5" customClass="ButtonView" customModule="Calculator" customModuleProvider="target">
+                                        <rect key="frame" x="66" y="103.33333333333334" width="65.333333333333343" height="103.66666666666669"/>
+                                        <color key="backgroundColor" red="0.77071249490000004" green="0.77126258609999998" blue="0.7814884782" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="23"/>
+                                        <state key="normal" title="X²">
+                                            <color key="titleColor" red="0.17240959410000001" green="0.17255401610000001" blue="0.1771838963" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cgt-DL-IxZ" customClass="ButtonView" customModule="Calculator" customModuleProvider="target">
+                                        <rect key="frame" x="131.33333333333337" y="103.33333333333334" width="65.666666666666657" height="103.66666666666669"/>
+                                        <color key="backgroundColor" red="0.77071249490000004" green="0.77126258609999998" blue="0.7814884782" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="23"/>
+                                        <state key="normal" title="X³">
+                                            <color key="titleColor" red="0.17240959410000001" green="0.17255401610000001" blue="0.1771838963" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dp1-3s-WG2" customClass="ButtonView" customModule="Calculator" customModuleProvider="target">
+                                        <rect key="frame" x="197" y="103.33333333333334" width="66" height="103.66666666666669"/>
+                                        <color key="backgroundColor" red="0.77071249490000004" green="0.77126258609999998" blue="0.7814884782" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="23"/>
+                                        <state key="normal" title="x^y">
+                                            <color key="titleColor" red="0.17240959410000001" green="0.17255401610000001" blue="0.1771838963" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZqI-Z8-q8Y" customClass="ButtonView" customModule="Calculator" customModuleProvider="target">
+                                        <rect key="frame" x="263" y="103.33333333333334" width="66.333333333333314" height="103.66666666666669"/>
+                                        <color key="backgroundColor" red="0.77071249490000004" green="0.77126258609999998" blue="0.7814884782" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="23"/>
+                                        <state key="normal" title="e^x">
+                                            <color key="titleColor" red="0.17240959410000001" green="0.17255401610000001" blue="0.1771838963" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jpl-UH-uJM" customClass="ButtonView" customModule="Calculator" customModuleProvider="target">
+                                        <rect key="frame" x="329.33333333333331" y="103.33333333333334" width="66.333333333333371" height="103.66666666666669"/>
+                                        <color key="backgroundColor" red="0.77071249490000004" green="0.77126258609999998" blue="0.7814884782" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="23"/>
+                                        <state key="normal" title="10^x">
+                                            <color key="titleColor" red="0.17240959410000001" green="0.17255401610000001" blue="0.1771838963" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N0g-HZ-d2r" customClass="ButtonView" customModule="Calculator" customModuleProvider="target">
+                                        <rect key="frame" x="329.33333333333331" y="310.33333333333337" width="66.333333333333371" height="102.66666666666663"/>
+                                        <color key="backgroundColor" red="0.77071249490000004" green="0.77126258609999998" blue="0.7814884782" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="23"/>
+                                        <state key="normal" title="EE">
+                                            <color key="titleColor" red="0.17240959410000001" green="0.17255401610000001" blue="0.1771838963" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W3W-pE-VSI" customClass="ButtonView" customModule="Calculator" customModuleProvider="target">
+                                        <rect key="frame" x="329.33333333333331" y="413" width="66.333333333333371" height="104"/>
+                                        <color key="backgroundColor" red="0.77071249490000004" green="0.77126258609999998" blue="0.7814884782" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="23"/>
+                                        <state key="normal" title="Rand">
+                                            <color key="titleColor" red="0.17240959410000001" green="0.17255401610000001" blue="0.1771838963" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HUW-6d-E5A" customClass="ButtonView" customModule="Calculator" customModuleProvider="target">
+                                        <rect key="frame" x="263" y="207.00000000000003" width="66.333333333333314" height="103.33333333333334"/>
+                                        <color key="backgroundColor" red="0.77071249490000004" green="0.77126258609999998" blue="0.7814884782" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="23"/>
+                                        <state key="normal" title="ln">
+                                            <color key="titleColor" red="0.17240959410000001" green="0.17255401610000001" blue="0.1771838963" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wfg-bp-cYE" customClass="ButtonView" customModule="Calculator" customModuleProvider="target">
+                                        <rect key="frame" x="263" y="310.33333333333337" width="66.333333333333314" height="102.66666666666663"/>
+                                        <color key="backgroundColor" red="0.77071249490000004" green="0.77126258609999998" blue="0.7814884782" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="23"/>
+                                        <state key="normal" title="e">
+                                            <color key="titleColor" red="0.17240959410000001" green="0.17255401610000001" blue="0.1771838963" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mcF-D1-gQm" customClass="ButtonView" customModule="Calculator" customModuleProvider="target">
+                                        <rect key="frame" x="197" y="207.00000000000003" width="66" height="103.33333333333334"/>
+                                        <color key="backgroundColor" red="0.77071249490000004" green="0.77126258609999998" blue="0.7814884782" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="23"/>
+                                        <state key="normal" title="x^(1/y)">
+                                            <color key="titleColor" red="0.17240959410000001" green="0.17255401610000001" blue="0.1771838963" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ccm-uW-c3O" customClass="ButtonView" customModule="Calculator" customModuleProvider="target">
+                                        <rect key="frame" x="197" y="310.33333333333337" width="66" height="102.66666666666663"/>
+                                        <color key="backgroundColor" red="0.77071249490000004" green="0.77126258609999998" blue="0.7814884782" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="23"/>
+                                        <state key="normal" title="tan">
+                                            <color key="titleColor" red="0.17240959410000001" green="0.17255401610000001" blue="0.1771838963" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Ls-4A-xdE" customClass="ButtonView" customModule="Calculator" customModuleProvider="target">
+                                        <rect key="frame" x="197" y="413" width="66" height="104"/>
+                                        <color key="backgroundColor" red="0.77071249490000004" green="0.77126258609999998" blue="0.7814884782" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="23"/>
+                                        <state key="normal" title="tanh">
+                                            <color key="titleColor" red="0.17240959410000001" green="0.17255401610000001" blue="0.1771838963" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4pP-XJ-e5A" customClass="ButtonView" customModule="Calculator" customModuleProvider="target">
+                                        <rect key="frame" x="131.33333333333337" y="207.00000000000003" width="65.666666666666657" height="103.33333333333334"/>
+                                        <color key="backgroundColor" red="0.77071249490000004" green="0.77126258609999998" blue="0.7814884782" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="23"/>
+                                        <state key="normal" title="∛x">
+                                            <color key="titleColor" red="0.17240959410000001" green="0.17255401610000001" blue="0.1771838963" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D4M-Mq-SSU" customClass="ButtonView" customModule="Calculator" customModuleProvider="target">
+                                        <rect key="frame" x="131.33333333333337" y="310.33333333333337" width="65.666666666666657" height="102.66666666666663"/>
+                                        <color key="backgroundColor" red="0.77071249490000004" green="0.77126258609999998" blue="0.7814884782" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="23"/>
+                                        <state key="normal" title="cons">
+                                            <color key="titleColor" red="0.17240959410000001" green="0.17255401610000001" blue="0.1771838963" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YgM-gT-X0w" customClass="ButtonView" customModule="Calculator" customModuleProvider="target">
+                                        <rect key="frame" x="131.33333333333337" y="413" width="65.666666666666657" height="104"/>
+                                        <color key="backgroundColor" red="0.77071249490000004" green="0.77126258609999998" blue="0.7814884782" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="23"/>
+                                        <state key="normal" title="cosh">
+                                            <color key="titleColor" red="0.17240959410000001" green="0.17255401610000001" blue="0.1771838963" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aU5-N7-za2" customClass="ButtonView" customModule="Calculator" customModuleProvider="target">
+                                        <rect key="frame" x="66" y="207.00000000000003" width="65.333333333333343" height="103.33333333333334"/>
+                                        <color key="backgroundColor" red="0.77071249490000004" green="0.77126258609999998" blue="0.7814884782" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="23"/>
+                                        <state key="normal" title="√x">
+                                            <color key="titleColor" red="0.17240959410000001" green="0.17255401610000001" blue="0.1771838963" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oWC-Uu-dXC" customClass="ButtonView" customModule="Calculator" customModuleProvider="target">
+                                        <rect key="frame" x="66" y="310.33333333333337" width="65.333333333333343" height="102.66666666666663"/>
+                                        <color key="backgroundColor" red="0.77071249490000004" green="0.77126258609999998" blue="0.7814884782" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="23"/>
+                                        <state key="normal" title="sin">
+                                            <color key="titleColor" red="0.17240959410000001" green="0.17255401610000001" blue="0.1771838963" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fGY-Vv-CIk" customClass="ButtonView" customModule="Calculator" customModuleProvider="target">
+                                        <rect key="frame" x="66" y="413" width="65.333333333333343" height="104"/>
+                                        <color key="backgroundColor" red="0.77071249490000004" green="0.77126258609999998" blue="0.7814884782" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="23"/>
+                                        <state key="normal" title="sinh">
+                                            <color key="titleColor" red="0.17240959410000001" green="0.17255401610000001" blue="0.1771838963" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wav-f2-vCL" customClass="ButtonView" customModule="Calculator" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="207.00000000000003" width="66" height="103.33333333333334"/>
+                                        <color key="backgroundColor" red="0.77071249490000004" green="0.77126258609999998" blue="0.7814884782" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="23"/>
+                                        <state key="normal" title="1/x">
+                                            <color key="titleColor" red="0.17240959410000001" green="0.17255401610000001" blue="0.1771838963" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AnQ-5V-l6T" customClass="ButtonView" customModule="Calculator" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="310.33333333333337" width="66" height="103.33333333333337"/>
+                                        <color key="backgroundColor" red="0.77071249490000004" green="0.77126258609999998" blue="0.7814884782" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="23"/>
+                                        <state key="normal" title="x!">
+                                            <color key="titleColor" red="0.17240959410000001" green="0.17255401610000001" blue="0.1771838963" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NdG-H2-apH" customClass="ButtonView" customModule="Calculator" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="413.66666666666674" width="66" height="103.66666666666663"/>
+                                        <color key="backgroundColor" red="0.77071249490000004" green="0.77126258609999998" blue="0.7814884782" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="23"/>
+                                        <state key="normal" title="Rad">
+                                            <color key="titleColor" red="0.17240959410000001" green="0.17255401610000001" blue="0.1771838963" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wgX-bh-VL6" customClass="ButtonView" customModule="Calculator" customModuleProvider="target">
+                                        <rect key="frame" x="66" y="0.0" width="65.333333333333343" height="103.33333333333334"/>
+                                        <color key="backgroundColor" red="0.77071249490000004" green="0.77126258609999998" blue="0.7814884782" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="23"/>
+                                        <state key="normal" title=")">
+                                            <color key="titleColor" red="0.17240959410000001" green="0.17255401610000001" blue="0.1771838963" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4RN-1K-D4c" customClass="ButtonView" customModule="Calculator" customModuleProvider="target">
+                                        <rect key="frame" x="131.33333333333337" y="0.0" width="65.666666666666657" height="103.33333333333334"/>
+                                        <color key="backgroundColor" red="0.77071249490000004" green="0.77126258609999998" blue="0.7814884782" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="23"/>
+                                        <state key="normal" title="mc">
+                                            <color key="titleColor" red="0.17240959410000001" green="0.17255401610000001" blue="0.1771838963" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZFv-NJ-HkN" customClass="ButtonView" customModule="Calculator" customModuleProvider="target">
+                                        <rect key="frame" x="197" y="0.0" width="66" height="103.33333333333334"/>
+                                        <color key="backgroundColor" red="0.77071249490000004" green="0.77126258609999998" blue="0.7814884782" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="23"/>
+                                        <state key="normal" title="m+">
+                                            <color key="titleColor" red="0.17240959410000001" green="0.17255401610000001" blue="0.1771838963" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0dU-zQ-eNm" customClass="ButtonView" customModule="Calculator" customModuleProvider="target">
+                                        <rect key="frame" x="263" y="0.0" width="66.333333333333314" height="103.33333333333334"/>
+                                        <color key="backgroundColor" red="0.77071249490000004" green="0.77126258609999998" blue="0.7814884782" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="23"/>
+                                        <state key="normal" title="m-">
+                                            <color key="titleColor" red="0.17240959410000001" green="0.17255401610000001" blue="0.1771838963" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GL1-AQ-GJp" customClass="ButtonView" customModule="Calculator" customModuleProvider="target">
+                                        <rect key="frame" x="329.33333333333331" y="0.0" width="66.333333333333371" height="103.33333333333334"/>
+                                        <color key="backgroundColor" red="0.77071249490000004" green="0.77126258609999998" blue="0.7814884782" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="23"/>
+                                        <state key="normal" title="mr">
+                                            <color key="titleColor" red="0.17240959410000001" green="0.17255401610000001" blue="0.1771838963" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="czZ-18-lrp" customClass="ButtonView" customModule="Calculator" customModuleProvider="target">
+                                        <rect key="frame" x="263" y="413" width="66.333333333333314" height="104"/>
+                                        <color key="backgroundColor" red="0.77071249490000004" green="0.77126258609999998" blue="0.7814884782" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="23"/>
+                                        <state key="normal" title="π">
+                                            <color key="titleColor" red="0.17240959410000001" green="0.17255401610000001" blue="0.1771838963" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CR1-SI-aNe" customClass="ButtonView" customModule="Calculator" customModuleProvider="target">
+                                        <rect key="frame" x="329.33333333333331" y="207.00000000000003" width="66.333333333333371" height="103.33333333333334"/>
+                                        <color key="backgroundColor" red="0.77071249490000004" green="0.77126258609999998" blue="0.7814884782" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="23"/>
+                                        <state key="normal" title="log10">
+                                            <color key="titleColor" red="0.17240959410000001" green="0.17255401610000001" blue="0.1771838963" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="ZFv-NJ-HkN" firstAttribute="height" secondItem="0dU-zQ-eNm" secondAttribute="height" id="05K-Vf-Nsd"/>
+                                    <constraint firstItem="AnQ-5V-l6T" firstAttribute="width" secondItem="Wav-f2-vCL" secondAttribute="width" id="072-53-XjK"/>
+                                    <constraint firstItem="Jpl-UH-uJM" firstAttribute="top" secondItem="GL1-AQ-GJp" secondAttribute="bottom" id="0Jh-Mt-hfT"/>
+                                    <constraint firstItem="D4M-Mq-SSU" firstAttribute="leading" secondItem="fGY-Vv-CIk" secondAttribute="trailing" id="0Ys-4q-tlf"/>
+                                    <constraint firstItem="HUW-6d-E5A" firstAttribute="top" secondItem="ZqI-Z8-q8Y" secondAttribute="bottom" id="0r5-NG-30v"/>
+                                    <constraint firstItem="4pP-XJ-e5A" firstAttribute="leading" secondItem="oWC-Uu-dXC" secondAttribute="trailing" id="1CB-d4-K1H"/>
+                                    <constraint firstItem="fGY-Vv-CIk" firstAttribute="height" secondItem="NdG-H2-apH" secondAttribute="height" id="1ih-lo-zCK"/>
+                                    <constraint firstItem="Jpl-UH-uJM" firstAttribute="height" secondItem="ZqI-Z8-q8Y" secondAttribute="height" id="3JI-7i-AIF"/>
+                                    <constraint firstItem="Ccm-uW-c3O" firstAttribute="height" secondItem="D4M-Mq-SSU" secondAttribute="height" id="3dm-2g-CaO"/>
+                                    <constraint firstItem="wgX-bh-VL6" firstAttribute="top" secondItem="0di-Cx-eDY" secondAttribute="top" id="3tp-NL-MOy"/>
+                                    <constraint firstItem="Wfg-bp-cYE" firstAttribute="height" secondItem="Ccm-uW-c3O" secondAttribute="height" id="4NN-rj-ff8"/>
+                                    <constraint firstItem="0dU-zQ-eNm" firstAttribute="height" secondItem="GL1-AQ-GJp" secondAttribute="height" id="4Vj-FU-PgM"/>
+                                    <constraint firstItem="mcF-D1-gQm" firstAttribute="top" secondItem="dp1-3s-WG2" secondAttribute="bottom" id="4WD-fc-1W8"/>
+                                    <constraint firstItem="oWC-Uu-dXC" firstAttribute="width" secondItem="AnQ-5V-l6T" secondAttribute="width" id="4Yy-gM-gpk"/>
+                                    <constraint firstItem="W3W-pE-VSI" firstAttribute="height" secondItem="czZ-18-lrp" secondAttribute="height" id="4cJ-E1-66g"/>
+                                    <constraint firstItem="mcF-D1-gQm" firstAttribute="leading" secondItem="D4M-Mq-SSU" secondAttribute="trailing" id="4vI-p9-cMP"/>
+                                    <constraint firstItem="Jpl-UH-uJM" firstAttribute="width" secondItem="ZqI-Z8-q8Y" secondAttribute="width" id="5om-VX-IYQ"/>
+                                    <constraint firstItem="D4M-Mq-SSU" firstAttribute="top" secondItem="4pP-XJ-e5A" secondAttribute="bottom" id="5x5-rY-WCO"/>
+                                    <constraint firstItem="wgX-bh-VL6" firstAttribute="leading" secondItem="wR1-Yz-gHC" secondAttribute="trailing" id="7AF-oe-oJB"/>
+                                    <constraint firstItem="HUW-6d-E5A" firstAttribute="height" secondItem="mcF-D1-gQm" secondAttribute="height" id="7Df-Kg-XpP"/>
+                                    <constraint firstItem="AnQ-5V-l6T" firstAttribute="height" secondItem="Wav-f2-vCL" secondAttribute="height" id="7WU-Ym-rpN"/>
+                                    <constraint firstItem="N0g-HZ-d2r" firstAttribute="leading" secondItem="czZ-18-lrp" secondAttribute="trailing" id="7eE-Gq-Al8"/>
+                                    <constraint firstItem="4RN-1K-D4c" firstAttribute="leading" secondItem="wgX-bh-VL6" secondAttribute="trailing" id="7eP-o3-7TF"/>
+                                    <constraint firstItem="AnQ-5V-l6T" firstAttribute="top" secondItem="Wav-f2-vCL" secondAttribute="bottom" id="8xL-1l-KrF"/>
+                                    <constraint firstItem="fGY-Vv-CIk" firstAttribute="top" secondItem="oWC-Uu-dXC" secondAttribute="bottom" id="90l-64-p3z"/>
+                                    <constraint firstItem="0Ls-4A-xdE" firstAttribute="top" secondItem="Ccm-uW-c3O" secondAttribute="bottom" id="ApC-2q-U8a"/>
+                                    <constraint firstItem="Wav-f2-vCL" firstAttribute="top" secondItem="6j5-jS-HIs" secondAttribute="bottom" id="BTt-K8-aU5"/>
+                                    <constraint firstItem="wgX-bh-VL6" firstAttribute="width" secondItem="4RN-1K-D4c" secondAttribute="width" id="Bn1-Sf-XwE"/>
+                                    <constraint firstItem="oHT-7G-ft5" firstAttribute="leading" secondItem="Wav-f2-vCL" secondAttribute="trailing" id="CCT-SU-G8B"/>
+                                    <constraint firstItem="HUW-6d-E5A" firstAttribute="width" secondItem="mcF-D1-gQm" secondAttribute="width" id="CGj-nR-Tqp"/>
+                                    <constraint firstItem="ZqI-Z8-q8Y" firstAttribute="leading" secondItem="mcF-D1-gQm" secondAttribute="trailing" id="CQx-I8-d6U"/>
+                                    <constraint firstItem="0Ls-4A-xdE" firstAttribute="height" secondItem="YgM-gT-X0w" secondAttribute="height" id="D1S-X0-ytP"/>
+                                    <constraint firstItem="YgM-gT-X0w" firstAttribute="width" secondItem="fGY-Vv-CIk" secondAttribute="width" id="DMa-ux-1kb"/>
+                                    <constraint firstItem="N0g-HZ-d2r" firstAttribute="height" secondItem="Wfg-bp-cYE" secondAttribute="height" id="Djc-94-4up"/>
+                                    <constraint firstItem="N0g-HZ-d2r" firstAttribute="top" secondItem="CR1-SI-aNe" secondAttribute="bottom" id="Dnq-tP-nDl"/>
+                                    <constraint firstItem="cgt-DL-IxZ" firstAttribute="width" secondItem="oHT-7G-ft5" secondAttribute="width" id="Eb3-fx-DoU"/>
+                                    <constraint firstItem="Jpl-UH-uJM" firstAttribute="leading" secondItem="ZqI-Z8-q8Y" secondAttribute="trailing" id="FBm-4i-E01"/>
+                                    <constraint firstItem="HUW-6d-E5A" firstAttribute="leading" secondItem="Ccm-uW-c3O" secondAttribute="trailing" id="FS6-9q-l1Q"/>
+                                    <constraint firstItem="oHT-7G-ft5" firstAttribute="height" secondItem="wgX-bh-VL6" secondAttribute="height" id="FwZ-ib-TKK"/>
+                                    <constraint firstItem="Wfg-bp-cYE" firstAttribute="width" secondItem="Ccm-uW-c3O" secondAttribute="width" id="HHd-zW-fhK"/>
+                                    <constraint firstAttribute="bottom" secondItem="NdG-H2-apH" secondAttribute="bottom" id="HIX-9V-qsV"/>
+                                    <constraint firstItem="ZqI-Z8-q8Y" firstAttribute="height" secondItem="dp1-3s-WG2" secondAttribute="height" id="HJh-GF-I4x"/>
+                                    <constraint firstItem="czZ-18-lrp" firstAttribute="width" secondItem="0Ls-4A-xdE" secondAttribute="width" id="J8v-Ew-IFf"/>
+                                    <constraint firstItem="CR1-SI-aNe" firstAttribute="height" secondItem="HUW-6d-E5A" secondAttribute="height" id="K1e-B8-xns"/>
+                                    <constraint firstItem="4pP-XJ-e5A" firstAttribute="height" secondItem="aU5-N7-za2" secondAttribute="height" id="KMl-Fo-laP"/>
+                                    <constraint firstItem="N0g-HZ-d2r" firstAttribute="width" secondItem="Wfg-bp-cYE" secondAttribute="width" id="LB6-W9-DWV"/>
+                                    <constraint firstItem="dp1-3s-WG2" firstAttribute="width" secondItem="cgt-DL-IxZ" secondAttribute="width" id="Lc8-2a-cwp"/>
+                                    <constraint firstItem="oHT-7G-ft5" firstAttribute="top" secondItem="4RN-1K-D4c" secondAttribute="bottom" id="Lg2-iQ-vMx"/>
+                                    <constraint firstItem="YgM-gT-X0w" firstAttribute="top" secondItem="D4M-Mq-SSU" secondAttribute="bottom" id="NvI-Kw-b28"/>
+                                    <constraint firstItem="ZFv-NJ-HkN" firstAttribute="width" secondItem="0dU-zQ-eNm" secondAttribute="width" id="PA6-9b-0kl"/>
+                                    <constraint firstItem="Wfg-bp-cYE" firstAttribute="leading" secondItem="0Ls-4A-xdE" secondAttribute="trailing" id="Q10-lo-1cY"/>
+                                    <constraint firstItem="Wfg-bp-cYE" firstAttribute="top" secondItem="HUW-6d-E5A" secondAttribute="bottom" id="QF1-ot-9vv"/>
+                                    <constraint firstItem="wgX-bh-VL6" firstAttribute="width" secondItem="wR1-Yz-gHC" secondAttribute="width" id="QIY-bJ-YsW"/>
+                                    <constraint firstItem="aU5-N7-za2" firstAttribute="width" secondItem="Wav-f2-vCL" secondAttribute="width" id="QL6-xj-oGS"/>
+                                    <constraint firstItem="GL1-AQ-GJp" firstAttribute="top" secondItem="0di-Cx-eDY" secondAttribute="top" id="QeQ-HH-wP6"/>
+                                    <constraint firstItem="aU5-N7-za2" firstAttribute="height" secondItem="Wav-f2-vCL" secondAttribute="height" id="R9q-RJ-8Zb"/>
+                                    <constraint firstItem="Ccm-uW-c3O" firstAttribute="width" secondItem="D4M-Mq-SSU" secondAttribute="width" id="ROi-Uo-l17"/>
+                                    <constraint firstItem="aU5-N7-za2" firstAttribute="leading" secondItem="Wav-f2-vCL" secondAttribute="trailing" id="Ryf-ma-Tga"/>
+                                    <constraint firstItem="NdG-H2-apH" firstAttribute="leading" secondItem="0di-Cx-eDY" secondAttribute="leading" id="TIO-hT-gZ4"/>
+                                    <constraint firstItem="ZFv-NJ-HkN" firstAttribute="leading" secondItem="4RN-1K-D4c" secondAttribute="trailing" id="TJW-9p-KjO"/>
+                                    <constraint firstItem="dp1-3s-WG2" firstAttribute="height" secondItem="cgt-DL-IxZ" secondAttribute="height" id="Tf5-Vc-qXi"/>
+                                    <constraint firstItem="Ccm-uW-c3O" firstAttribute="leading" secondItem="YgM-gT-X0w" secondAttribute="trailing" id="Tmy-wJ-T3N"/>
+                                    <constraint firstItem="YgM-gT-X0w" firstAttribute="leading" secondItem="fGY-Vv-CIk" secondAttribute="trailing" id="Tzx-aX-LOW"/>
+                                    <constraint firstItem="0dU-zQ-eNm" firstAttribute="top" secondItem="0di-Cx-eDY" secondAttribute="top" id="U2l-zW-AhB"/>
+                                    <constraint firstItem="CR1-SI-aNe" firstAttribute="top" secondItem="Jpl-UH-uJM" secondAttribute="bottom" id="U5W-hW-A8l"/>
+                                    <constraint firstItem="cgt-DL-IxZ" firstAttribute="top" secondItem="ZFv-NJ-HkN" secondAttribute="bottom" id="UwW-Dx-hLu"/>
+                                    <constraint firstItem="D4M-Mq-SSU" firstAttribute="height" secondItem="oWC-Uu-dXC" secondAttribute="height" id="VGY-TC-wT8"/>
+                                    <constraint firstItem="AnQ-5V-l6T" firstAttribute="leading" secondItem="0di-Cx-eDY" secondAttribute="leading" id="VIV-hg-a2l"/>
+                                    <constraint firstItem="YgM-gT-X0w" firstAttribute="height" secondItem="fGY-Vv-CIk" secondAttribute="height" id="Vd2-7a-iHr"/>
+                                    <constraint firstItem="Wav-f2-vCL" firstAttribute="width" secondItem="6j5-jS-HIs" secondAttribute="width" id="XCy-gc-4Tg"/>
+                                    <constraint firstItem="oHT-7G-ft5" firstAttribute="width" secondItem="6j5-jS-HIs" secondAttribute="width" id="XKt-YH-D5b"/>
+                                    <constraint firstItem="4RN-1K-D4c" firstAttribute="width" secondItem="ZFv-NJ-HkN" secondAttribute="width" id="YH5-YK-ikI"/>
+                                    <constraint firstItem="czZ-18-lrp" firstAttribute="height" secondItem="0Ls-4A-xdE" secondAttribute="height" id="Yek-aA-aki"/>
+                                    <constraint firstItem="6j5-jS-HIs" firstAttribute="height" secondItem="wR1-Yz-gHC" secondAttribute="height" id="ac5-w1-6yq"/>
+                                    <constraint firstItem="mcF-D1-gQm" firstAttribute="height" secondItem="4pP-XJ-e5A" secondAttribute="height" id="aly-Pf-5fY"/>
+                                    <constraint firstItem="wR1-Yz-gHC" firstAttribute="height" secondItem="wgX-bh-VL6" secondAttribute="height" id="b2I-cu-Pak"/>
+                                    <constraint firstItem="mcF-D1-gQm" firstAttribute="width" secondItem="4pP-XJ-e5A" secondAttribute="width" id="bIe-jm-10D"/>
+                                    <constraint firstItem="CR1-SI-aNe" firstAttribute="leading" secondItem="Wfg-bp-cYE" secondAttribute="trailing" id="bP2-ky-sjk"/>
+                                    <constraint firstItem="dp1-3s-WG2" firstAttribute="top" secondItem="ZFv-NJ-HkN" secondAttribute="bottom" id="c6y-nw-Njq"/>
+                                    <constraint firstItem="W3W-pE-VSI" firstAttribute="leading" secondItem="czZ-18-lrp" secondAttribute="trailing" id="ddp-e1-hgi"/>
+                                    <constraint firstItem="wR1-Yz-gHC" firstAttribute="top" secondItem="0di-Cx-eDY" secondAttribute="top" id="eP4-4v-clX"/>
+                                    <constraint firstItem="oWC-Uu-dXC" firstAttribute="height" secondItem="AnQ-5V-l6T" secondAttribute="height" id="f3z-W9-dob"/>
+                                    <constraint firstAttribute="trailing" secondItem="GL1-AQ-GJp" secondAttribute="trailing" id="fxh-pf-irZ"/>
+                                    <constraint firstItem="wgX-bh-VL6" firstAttribute="height" secondItem="4RN-1K-D4c" secondAttribute="height" id="g8o-mz-foZ"/>
+                                    <constraint firstItem="fGY-Vv-CIk" firstAttribute="width" secondItem="NdG-H2-apH" secondAttribute="width" id="gdO-ZF-SEn"/>
+                                    <constraint firstItem="Ccm-uW-c3O" firstAttribute="top" secondItem="mcF-D1-gQm" secondAttribute="bottom" id="giS-U7-AeU"/>
+                                    <constraint firstItem="oWC-Uu-dXC" firstAttribute="top" secondItem="aU5-N7-za2" secondAttribute="bottom" id="hcg-j6-i9A"/>
+                                    <constraint firstItem="GL1-AQ-GJp" firstAttribute="leading" secondItem="0dU-zQ-eNm" secondAttribute="trailing" id="hdF-L6-nF8"/>
+                                    <constraint firstItem="W3W-pE-VSI" firstAttribute="width" secondItem="czZ-18-lrp" secondAttribute="width" id="huY-uJ-0p4"/>
+                                    <constraint firstItem="6j5-jS-HIs" firstAttribute="leading" secondItem="0di-Cx-eDY" secondAttribute="leading" id="hul-1w-6Gk"/>
+                                    <constraint firstItem="cgt-DL-IxZ" firstAttribute="leading" secondItem="oHT-7G-ft5" secondAttribute="trailing" id="hxz-ws-O8U"/>
+                                    <constraint firstItem="0dU-zQ-eNm" firstAttribute="leading" secondItem="ZFv-NJ-HkN" secondAttribute="trailing" id="iKK-zt-y8g"/>
+                                    <constraint firstItem="4RN-1K-D4c" firstAttribute="top" secondItem="0di-Cx-eDY" secondAttribute="top" id="isU-f3-gSR"/>
+                                    <constraint firstItem="czZ-18-lrp" firstAttribute="leading" secondItem="0Ls-4A-xdE" secondAttribute="trailing" id="iw5-wp-nX7"/>
+                                    <constraint firstItem="6j5-jS-HIs" firstAttribute="width" secondItem="wR1-Yz-gHC" secondAttribute="width" id="kNw-X7-e8f"/>
+                                    <constraint firstItem="6j5-jS-HIs" firstAttribute="top" secondItem="wR1-Yz-gHC" secondAttribute="bottom" id="kor-ma-bkR"/>
+                                    <constraint firstItem="fGY-Vv-CIk" firstAttribute="leading" secondItem="NdG-H2-apH" secondAttribute="trailing" id="l1Y-Su-PAn"/>
+                                    <constraint firstItem="CR1-SI-aNe" firstAttribute="width" secondItem="HUW-6d-E5A" secondAttribute="width" id="lj1-IW-Xfc"/>
+                                    <constraint firstItem="0Ls-4A-xdE" firstAttribute="width" secondItem="YgM-gT-X0w" secondAttribute="width" id="lr4-ur-3dp"/>
+                                    <constraint firstItem="dp1-3s-WG2" firstAttribute="leading" secondItem="cgt-DL-IxZ" secondAttribute="trailing" id="mfB-b1-8Ot"/>
+                                    <constraint firstItem="oWC-Uu-dXC" firstAttribute="leading" secondItem="NdG-H2-apH" secondAttribute="trailing" id="mfs-Tq-LXt"/>
+                                    <constraint firstItem="0dU-zQ-eNm" firstAttribute="width" secondItem="GL1-AQ-GJp" secondAttribute="width" id="nZQ-JU-kAQ"/>
+                                    <constraint firstItem="wR1-Yz-gHC" firstAttribute="leading" secondItem="0di-Cx-eDY" secondAttribute="leading" id="p2Q-m3-a0v"/>
+                                    <constraint firstItem="4RN-1K-D4c" firstAttribute="height" secondItem="ZFv-NJ-HkN" secondAttribute="height" id="pXN-Co-pGQ"/>
+                                    <constraint firstItem="cgt-DL-IxZ" firstAttribute="height" secondItem="oHT-7G-ft5" secondAttribute="height" id="pmS-lm-HMx"/>
+                                    <constraint firstItem="0Ls-4A-xdE" firstAttribute="leading" secondItem="YgM-gT-X0w" secondAttribute="trailing" id="prI-hH-0WC"/>
+                                    <constraint firstItem="4pP-XJ-e5A" firstAttribute="top" secondItem="cgt-DL-IxZ" secondAttribute="bottom" id="q5P-Mm-hU5"/>
+                                    <constraint firstItem="ZFv-NJ-HkN" firstAttribute="top" secondItem="0di-Cx-eDY" secondAttribute="top" id="qAl-Yq-aar"/>
+                                    <constraint firstItem="W3W-pE-VSI" firstAttribute="top" secondItem="N0g-HZ-d2r" secondAttribute="bottom" id="sJ1-OC-ubf"/>
+                                    <constraint firstItem="D4M-Mq-SSU" firstAttribute="width" secondItem="oWC-Uu-dXC" secondAttribute="width" id="ssi-Em-Rig"/>
+                                    <constraint firstItem="NdG-H2-apH" firstAttribute="width" secondItem="AnQ-5V-l6T" secondAttribute="width" id="tNn-ff-Psq"/>
+                                    <constraint firstItem="ZqI-Z8-q8Y" firstAttribute="width" secondItem="dp1-3s-WG2" secondAttribute="width" id="ud8-dh-02a"/>
+                                    <constraint firstItem="aU5-N7-za2" firstAttribute="top" secondItem="oHT-7G-ft5" secondAttribute="bottom" id="v0a-7G-D5o"/>
+                                    <constraint firstItem="ZqI-Z8-q8Y" firstAttribute="top" secondItem="0dU-zQ-eNm" secondAttribute="bottom" id="vui-aT-3M0"/>
+                                    <constraint firstItem="4pP-XJ-e5A" firstAttribute="width" secondItem="aU5-N7-za2" secondAttribute="width" id="wAS-RQ-OuG"/>
+                                    <constraint firstItem="NdG-H2-apH" firstAttribute="height" secondItem="AnQ-5V-l6T" secondAttribute="height" id="wcX-fh-LxE"/>
+                                    <constraint firstItem="Wav-f2-vCL" firstAttribute="leading" secondItem="0di-Cx-eDY" secondAttribute="leading" id="weY-PM-XWd"/>
+                                    <constraint firstItem="czZ-18-lrp" firstAttribute="top" secondItem="Wfg-bp-cYE" secondAttribute="bottom" id="xME-xd-QsI"/>
+                                    <constraint firstItem="Wav-f2-vCL" firstAttribute="height" secondItem="6j5-jS-HIs" secondAttribute="height" id="z7v-4j-Czx"/>
+                                    <constraint firstItem="NdG-H2-apH" firstAttribute="top" secondItem="AnQ-5V-l6T" secondAttribute="bottom" id="zi2-zP-a01"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -85,10 +679,14 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="simpleOperationsView" destination="EeO-F5-YTB" id="HHk-de-qcl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <customObject id="EeO-F5-YTB" customClass="SimpleOperationsView" customModule="Calculator" customModuleProvider="target"/>
             </objects>
-            <point key="canvasLocation" x="209.765625" y="123.4375"/>
+            <point key="canvasLocation" x="207.5" y="121.875"/>
         </scene>
     </scenes>
 </document>
