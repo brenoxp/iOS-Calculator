@@ -10,9 +10,12 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet var simpleOperationsView: SimpleOperationsView!
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        simpleOperationsView.load()
     }
 
     override func didReceiveMemoryWarning() {

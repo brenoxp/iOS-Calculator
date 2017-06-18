@@ -17,6 +17,9 @@
 		551730571EF0E236004D6348 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 551730551EF0E236004D6348 /* LaunchScreen.storyboard */; };
 		551730621EF0E236004D6348 /* CalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551730611EF0E236004D6348 /* CalculatorTests.swift */; };
 		5517306D1EF0E236004D6348 /* CalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5517306C1EF0E236004D6348 /* CalculatorUITests.swift */; };
+		55A272751EF62222006BEB9B /* SimpleOperationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A272741EF62222006BEB9B /* SimpleOperationsView.swift */; };
+		55A272791EF62505006BEB9B /* ButtonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55A272781EF62505006BEB9B /* ButtonView.xib */; };
+		55A2727B1EF62527006BEB9B /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A2727A1EF62527006BEB9B /* ButtonView.swift */; };
 		58FF05EE83D7319FF16A1005 /* Pods_CalculatorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B995C8760038D2A32A679D8A /* Pods_CalculatorTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +59,9 @@
 		551730681EF0E236004D6348 /* CalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalculatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5517306C1EF0E236004D6348 /* CalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorUITests.swift; sourceTree = "<group>"; };
 		5517306E1EF0E236004D6348 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55A272741EF62222006BEB9B /* SimpleOperationsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleOperationsView.swift; sourceTree = "<group>"; };
+		55A272781EF62505006BEB9B /* ButtonView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ButtonView.xib; sourceTree = "<group>"; };
+		55A2727A1EF62527006BEB9B /* ButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		68DE6B911F93287CE86EC8DD /* Pods-Calculator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Calculator.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Calculator/Pods-Calculator.debug.xcconfig"; sourceTree = "<group>"; };
 		A087DDA7A3978ECC155841FF /* Pods-CalculatorUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CalculatorUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CalculatorUITests/Pods-CalculatorUITests.release.xcconfig"; sourceTree = "<group>"; };
 		B635E9D567AB3302809B7F89 /* Pods-CalculatorUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CalculatorUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CalculatorUITests/Pods-CalculatorUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -118,6 +124,9 @@
 			children = (
 				551730491EF0E236004D6348 /* AppDelegate.swift */,
 				5517304B1EF0E236004D6348 /* ViewController.swift */,
+				55A272741EF62222006BEB9B /* SimpleOperationsView.swift */,
+				55A272781EF62505006BEB9B /* ButtonView.xib */,
+				55A2727A1EF62527006BEB9B /* ButtonView.swift */,
 				5517304D1EF0E236004D6348 /* Main.storyboard */,
 				551730531EF0E236004D6348 /* Assets.xcassets */,
 				551730551EF0E236004D6348 /* LaunchScreen.storyboard */,
@@ -290,6 +299,7 @@
 			files = (
 				551730571EF0E236004D6348 /* LaunchScreen.storyboard in Resources */,
 				551730541EF0E236004D6348 /* Assets.xcassets in Resources */,
+				55A272791EF62505006BEB9B /* ButtonView.xib in Resources */,
 				5517304F1EF0E236004D6348 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -468,6 +478,8 @@
 			files = (
 				5517304C1EF0E236004D6348 /* ViewController.swift in Sources */,
 				5517304A1EF0E236004D6348 /* AppDelegate.swift in Sources */,
+				55A2727B1EF62527006BEB9B /* ButtonView.swift in Sources */,
+				55A272751EF62222006BEB9B /* SimpleOperationsView.swift in Sources */,
 				551730521EF0E236004D6348 /* Calculator.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
